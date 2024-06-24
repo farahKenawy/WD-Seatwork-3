@@ -4,30 +4,24 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/farahKenawy">
+    <img src="./assets/img/logo2.png" alt="KiteLines" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">WD-Seatwork-3</h3>
 </div>
-<!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+WD-Seatwork-3 showcases a meticulously crafted website featuring creative header and footer designs using pure HTML and CSS. This project presents both static and animated versions of headers and footers, highlighting distinct visual styles and dynamic elements. The website is meticulously structured to ensure seamless navigation and accessibility. Each design element is deployed effectively, enhancing user experience through thoughtful interface design. The README file provides comprehensive updates and documentation, guiding users through the project's setup and features. WD-Seatwork-3 exemplifies skillful integration of front-end technologies to create engaging and functional web displays.
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=farahKenawy/WD-Seatwork-3)
 
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -57,26 +51,29 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+Project Description:
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+What is the project?
+WD-Seatwork-3 is a web development project showcasing creative header and footer designs using HTML and CSS.
+
+Purpose:
+The project aims to demonstrate proficiency in creating visually appealing and functional headers and footers. It explores static and animated designs to enhance user experience and engagement.
+
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Static and Animated Headers/Footers
+- Semantic HTML for structure
+- CSS for styling and animations
+- Deployment for accessibility and evaluation
+
 
 ### Technology
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -117,4 +114,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| E-commerce UI Kit Header - Basic Design System for Sketch, Figma | Basic Header and Footer Designs | https://ph.pinterest.com/pin/20618110787295835/ |

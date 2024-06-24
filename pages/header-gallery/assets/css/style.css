@@ -1,0 +1,600 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Adjust height as needed */
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo height */
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Header Design 1: Centered Logo with Slide-In Navigation */
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd54f; /* Light pastel yellow */
+    padding: 20px;
+    animation: slideInFromTop 1s ease-out;
+}
+.header1 .nav-left, .header1 .nav-right {
+    display: flex;
+}
+
+.header1 .nav-left ul, .header1 .nav-right ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header1 .nav-left li, .header1 .nav-right li {
+    margin: 0 15px;
+}
+
+.header1 a {
+    text-decoration: none;
+    color: #595959; /* Darker pastel gray */
+    font-weight: bold;
+}
+
+
+/* Header Design 2: Full-Width Logo with Fading Navigation */
+.header2 {
+    text-align: center;
+    background-color: #81d4fa; /* Light pastel blue */
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.header2 .logo-img {
+    height: 100px;
+}
+
+.header2 .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header2 .main-nav li {
+    margin: 0 20px;
+}
+
+.header2 .main-nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+}
+
+/* Header Design 3: Logo on the Left with Drop-Down Navigation */
+.header3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb74d; /* Light pastel orange */
+    padding: 15px 30px;
+    animation: slideInFromLeft 1s ease-out;
+    position: relative;
+}
+
+.header3 .logo img {
+    height: 100px; /* Larger height for better visibility */
+}
+
+.header3 .main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header3 .main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header3 .main-nav li {
+    margin: 0 15px; /* Increased margin for better spacing */
+}
+
+.header3 .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px; /* Added padding for better clickability */
+    transition: color 0.3s ease;
+}
+
+.header3 .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.header3 .dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.header3 .dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.header3 .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+/* Header Design 4: Vertical Logo with Vertical Slide Navigation */
+.header4 {
+    background-color: #ce93d8; /* Light pastel purple */
+    padding: 20px;
+    animation: slideInFromRight 1s ease-out;
+}
+
+.vertical-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+}
+
+.vertical-logo {
+    margin-bottom: 20px;
+}
+
+.vertical-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-nav li {
+    margin-bottom: 10px;
+}
+
+.vertical-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Header Design 5: Split Header with Logo in the Center and Navigation on Both Sides */
+.header5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #80cbc4; /* Light pastel teal */
+    padding: 10px 18px;
+    animation: slideInFromBottom 1s ease-out;
+    position: relative;
+}
+
+.header5 .logo img {
+    height: 100px; /* Larger height for better visibility */
+}
+
+.header5 .vertical-nav {
+    text-align: right;
+}
+
+.header5 .vertical-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header5 .vertical-nav li {
+    margin-bottom: 10px; /* Space between vertical navigation items */
+}
+
+.header5 .vertical-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.expand-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/*Animated Headers*/
+
+/* Header Design 1: Centered Logo with Slide-In Navigation */
+.header1.animated-header {
+    background-color: #ffd54f; /* Light pastel yellow */
+    padding: 20px;
+    animation: slideInFromTop 1s ease-out;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header1.animated-header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Adjust height as needed */
+}
+
+.header1.animated-header .logo img {
+    height: 50px; /* Adjust logo height */
+}
+
+.header1.animated-header .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header1.animated-header .main-nav li {
+    margin: 0 15px;
+}
+
+.header1.animated-header .main-nav a {
+    text-decoration: none;
+    color: #595959; /* Darker pastel gray */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header1.animated-header .main-nav a:hover {
+    color: #333; /* Darker gray on hover */
+}
+
+/* Header Design 2: Full-Width Logo with Fading Navigation */
+.header2.animated-header {
+    text-align: center;
+    background-color: #81d4fa; /* Light pastel blue */
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.header2.animated-header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header2.animated-header .logo.full-width-logo {
+    margin-bottom: 20px;
+}
+
+.header2.animated-header .main-nav.fade-in-nav {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInNav 1s ease-out forwards;
+}
+
+.header2.animated-header .main-nav.fade-in-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header2.animated-header .main-nav.fade-in-nav li {
+    margin: 0 20px;
+}
+
+.header2.animated-header .main-nav.fade-in-nav a:hover {
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+@keyframes fadeInNav {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.header2.animated-header:hover {
+    background-color: #9abdcd; /* Adjust background color if needed */
+}
+
+.header2.animated-header:hover .container {
+    opacity: 1; /* Fade in the container */
+    transform: translateY(0); /* Slide down */
+}
+
+.header2.animated-header:hover .logo {
+    opacity: 1; /* Fade in the logo */
+    background-color: #ffb74d; /* Adjust background color if needed */
+}
+
+.header2.animated-header:hover .main-nav {
+    opacity: 1; /* Fade in the navigation */
+    transform: translateY(0); /* Slide navigation into view */
+}
+
+/* Header Design 3: Logo on the Left with Drop-Down Navigation */
+.header3.animated-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb74d; /* Light pastel orange */
+    padding: 15px 30px;
+    animation: slideInFromLeft 1s ease-out;
+    position: relative;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header3.animated-header .logo img {
+    height: 100px; /* Larger height for better visibility */
+}
+
+.header3.animated-header .main-nav dropdown-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header3.animated-header .main-nav drop-down-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header3.animated-header, .main-nav drop-down-nav{
+    margin: 0 15px; /* Increased margin for better spacing */
+    position: relative; /* Ensure dropdown positioning */
+}
+
+.header3.animated-header .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px; /* Added padding for better clickability */
+    transition: color 0.3s ease;
+}
+
+.header3.animated-header .main-nav a:hover {
+    color: #64b5f6; /* Light pastel blue */
+}
+
+.header3.animated-header .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position dropdown below parent */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    opacity: 0;
+    animation: fadeInDropDown 0.3s ease-out forwards;
+}
+
+.header3.animated-header .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1; /* Ensure the dropdown menu is fully visible */
+}
+
+.header3.animated-header .dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.header3.animated-header .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+@keyframes fadeInDropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Design 4: Vertical Logo with Vertical Slide Navigation */
+.header4.animated-header {
+    background-color: #ce93d8; /* Light pastel purple */
+    padding: 20px;
+}
+
+.header4.animated-header .vertical-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header4.animated-header .vertical-logo {
+    margin-bottom: 20px;
+}
+
+.header4.animated-header .vertical-nav {
+    overflow: hidden; /* Ensure the overflow is hidden to hide the menu initially */
+    max-height: 0; /* Start with a height of 0 */
+    transition: max-height 0.3s ease-out; /* Smooth transition for height change */
+}
+
+.header4.animated-header:hover .vertical-nav {
+    max-height: 200px; /* Adjust this value based on your content height */
+}
+
+.header4.animated-header .vertical-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header4.animated-header .vertical-nav li {
+    margin-bottom: 10px;
+}
+
+.header4.animated-header .vertical-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.header4.animated-header .vertical-nav a:hover {
+    color: #64b5f6; /* Light pastel blue */
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+/* Header Design 5: Overlay Logo with Expanding Navigation */
+.header5.animated-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #80cbc4; /* Light pastel teal */
+    padding: 10px 18px;
+    position: relative;
+}
+
+.header5.animated-header .container {
+    position: relative;
+}
+
+.header5.animated-header .logo {
+    position: relative;
+    z-index: 1;
+}
+
+.header5.animated-header .main-nav expand-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #80cbc4; /* Match header background */
+    border-radius: 5px;
+    overflow: hidden; /* Hide overflow content initially */
+    max-height: 0; /* Start with collapsed height */
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth animation for height and opacity */
+    opacity: 0; /* Initially invisible */
+}
+
+.header5.animated-header:hover .main-nav {
+    max-height: 200px; /* Expand to show content */
+    opacity: 1; /* Fade in */
+}
+
+.header5.animated-header .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header5.animated-header .main-nav li {
+    margin-bottom: 10px;
+}
+
+.header5.animated-header .main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.header5.animated-header .main-nav a:hover {
+    color: #64b5f6; /* Light pastel blue */
+}
